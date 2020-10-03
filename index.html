@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+<body>
+<div class="form">
+
+    <h1>S<span class="blue-text-span">I</span>G<span class="blue-text-span">N</span> U<span class="blue-text-span">P</span></h1>
+
+    <div class="div-input">
+        <input type="text" name="email" id="email" required>
+        <label for="email" class="label-name" id="email-label">
+            <span class="label-content">Email</span>
+        </label>
+    </div>
+    <div id="email-error-div"></div>
+
+
+    <div class="div-input">
+        <input type="password" name="psw" id="psw" required>
+        <label for="psw" class="label-name" id="psw-label">
+            <span class="label-content">Password</span>
+        </label>
+    </div>
+    <div id="psw-error-div"></div>
+
+
+    <div class="div-input">
+        <input type="password" name="psw-confirm" id="psw-confirm" required>
+        <label for="psw-confirm" class="label-name" id="psw-confirm-label">
+            <span class="label-content">Confirm Password</span>
+        </label>
+    </div>
+    <div id="psw-confirm-error-div"></div>
+
+    <a href="#">Terms <span class="blue-text-span">&</span> Privacy</a>
+
+    <button type="submit" class="registerBtn" id="registerBtn">SIGN UP</button>
+
+    <a href="#">SIGN IN</a>
+    <script src="JS/main.js"></script>
+
+
+</div>
+</body>
+</html>

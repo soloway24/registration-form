@@ -1,0 +1,136 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+body {
+    display: flex;
+}
+
+.form {
+    background: #f4f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    font-family: sans-serif;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 2px #aaaaaa;
+    resize: none;
+}
+
+.div-input{
+    width: 80%;
+    position: relative;
+    height: 50px;
+    overflow: hidden;
+}
+
+.div-input input{
+    background: #f4f2f2;
+    width: 100%;
+    height: 100%;
+    color: #595f6e;
+    left: 0;
+    padding-top: 20px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+.div-input label{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid black;
+}
+.div-input label::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: -1px;
+    left: 0;
+    border-bottom: 3px solid #5f8ad3;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+.label-content{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.div-input input:focus + .label-name .label-content,
+.div-input input:valid + .label-name .label-content
+{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #5f8ad3;
+}
+
+.div-input input:focus + .label-name::after,
+.div-input input:valid + .label-name::after
+{
+    transform: translatex(0);
+}
+
+.form a{
+    text-decoration: none;
+    color: black;
+}
+.form a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+.blue-text-span {
+    color: #5f8ad3;
+}
+
+.registerBtn {
+    width: 30%;
+    height: 7%;
+    color: white;
+    background: #5f8ad3;
+    border-color: #86acef;
+    border-width: 5px;
+    border-radius: 10px;
+    outline: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#email-error-div{
+    position: absolute;
+    font-size: 10px;
+    color: red;
+    width: 320px;
+    z-index: 5;
+    text-align: right;
+    margin-top: -140px;
+ }
+#psw-error-div{
+    position: absolute;
+    font-size: 10px;
+    color: red;
+    width: 320px;
+    z-index: 5;
+    text-align: right;
+    margin-top: 18px;
+}
+#psw-confirm-error-div{
+    position: absolute;
+    font-size: 10px;
+    color: red;
+    width: 320px;
+    z-index: 5;
+    text-align: right;
+    margin-top: 175px;
+}
